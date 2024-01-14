@@ -1,0 +1,84 @@
+
+  body {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .alert-div {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  
+  .refresh-btn {
+    width: 10em;
+    height: 3em;
+    outline: none;
+    background-color: cornflowerblue;
+    font-weight: 500;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  
+  .App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    animation: backgroundAnimation 10s infinite alternate;
+  }
+  
+  @keyframes backgroundAnimation {
+    from {
+      background-color: #080808; 
+    }
+    to {
+      background-color: #02274d; 
+    }
+  }
+  
+  .calc-wrapper {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 10px ridge #878786;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+   
+  }
+
+  .row button {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .row button:hover {
+    background-color: #2980b9;
+  }
+  
+  .row button:active {
+    transform: scale(0.95);
+  }
+  
+  h1 {
+    color: #878786;
+    font-size: 35px;
+  }
+  
+  h6 {
+    font-size: 12px;
+  }
+  
