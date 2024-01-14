@@ -1,0 +1,101 @@
+
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #04093f; 
+  color: #0e0101; 
+  text-align: center;
+  margin: 0; 
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #b6bed8;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #8d159c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b8d34;
+}
+
+input,
+button {
+  font-family: 'Arial', sans-serif;
+}
+
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.pie-chart {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin: 20px;
+}
+
+.completed-slice,
+.remaining-slice {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  clip: rect(0, 50px, 100px, 0);
+}
+
+.completed-slice {
+  background-color: green;
+  transform-origin: 100% 50%;
+}
+
+.remaining-slice {
+  background-color: rgb(22, 4, 4); 
+  transform-origin: 0 50%;
+}
+
+.pie-chart-container {
+  margin-top: 20px;
+  text-align: center;
+}
